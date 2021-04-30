@@ -52,73 +52,116 @@
 
     <section anchor="barreto-naehrig-curves" title="Barreto Naehrig (BN) Curves">
         <section anchor="bn462-curve" title="BN462 Curve">
-            <section anchor="bn462G1-curve-jose-key-representation" title="Bn462G1 Curve JOSE Key Representation">
-            <t>
-
-            </t>
+            <section anchor="bn462g1-curve-jose-key-representation" title="Bn462G1 Curve JOSE Key Representation">
+                <t>
+                    The pairing friendly elliptic curve "BN462" which uses the largest prime-order subgroup of E(GF(p)) is represented in a JSON Web Key (JWK) [RFC7517] using these values:
+                        o  "kty": "EC"
+                        o  "crv": "Bn462G1"
+                    plus "x" value to represent the curve point for the public key.
+                </t>
             </section>
-            <section anchor="bn462G1-curve-cose-key-representation" title="Bn462G1 Curve COSE Key Representation">
-            <t>
-            
-            </t>
+            <section anchor="bn462g1-curve-cose-key-representation" title="Bn462G1 Curve COSE Key Representation">
+                <t>
+                    It is represented in a COSE_Key [RFC8152] using these values:
+                        o  "kty" (1): "EC1" (TBD - requested assignment 7)
+                        o  "crv" (-1): "Bn462G1" (TBD - requested assignment 9)
+                    plus "x" (-2) values to represent the curve point for the key.
+                </t>
             </section>
-            <section anchor="bn462G2-curve-jose-key-representation" title="Bn462G2 Curve JOSE Key Representation">
-            <t>
-
-            </t>
+            <section anchor="bn462g2-curve-jose-key-representation" title="Bn462G2 Curve JOSE Key Representation">
+                <t>
+                    The pairing friendly elliptic curve "BN462" which uses an r-order subgroup of E'(GF(p^2)) is represented in a JSON Web Key (JWK) [RFC7517] using these values:
+                            o  "kty": "EC"
+                            o  "crv": "Bn462G2"
+                    plus "x" value to represent the curve point for the public key.
+                </t>
             </section>
-            <section anchor="bn462G1-curve-cose-key-representation" title="Bn462G2 Curve COSE Key Representation">
-            <t>
-            
-            </t>
+            <section anchor="bn462g2-curve-cose-key-representation" title="Bn462G2 Curve COSE Key Representation">
+                <t>
+                    It is represented in a COSE_Key [RFC8152] using these values:
+                        o  "kty" (1): "EC1" (TBD - requested assignment 7)
+                        o  "crv" (-1): "Bn462G2" (TBD - requested assignment 10)
+                    plus "x" (-2) values to represent the curve point for the key.
+                </t>
             </section>
         </section>
+    </section>
 
+    <section anchor="barreto-lynn-scott-curves" title="Barreto Lynn Scott (BLS) Curves">
         <section anchor="bls12381-curve" title="BLS12-381 Curve">
             <section anchor="bls12381g1-curve-jose-key-representation" title="Bls12381G1 Curve JOSE Key Representation">
-            <t>
-
-            </t>
+                <t>
+                    The pairing friendly elliptic curve "BLS12-381" which uses the largest prime-order subgroup of E(GF(p)) is represented in a JSON Web Key (JWK) [RFC7517] using these values:
+                        o  "kty": "EC"
+                        o  "crv": "Bls12381G1"
+                    plus "x" value to represent the curve point for the public key.
+                </t>
             </section>
             <section anchor="bls12381g1-curve-cose-key-representation" title="Bls12381G1 Curve COSE Key Representation">
-            <t>
-            
-            </t>
+                <t>
+                    It is represented in a COSE_Key [RFC8152] using these values:
+                        o  "kty" (1): "EC1" (TBD - requested assignment 7)
+                        o  "crv" (-1): "Bls12381G1" (TBD - requested assignment 11)
+                    plus "x" (-2) values to represent the curve point for the key.
+                </t>
             </section>
             <section anchor="bls12381g2-curve-jose-key-representation" title="Bls12381G2 Curve JOSE Key Representation">
-            <t>
-
-            </t>
+                <t>
+                    The pairing friendly elliptic curve "BLS12-381" which uses an r-order subgroup of E'(GF(p^2)) is represented in a JSON Web Key (JWK) [RFC7517] using these values:
+                            o  "kty": "EC"
+                            o  "crv": "Bls12381G2"
+                    plus "x" value to represent the curve point for the public key.
+                </t>
             </section>
             <section anchor="bls12381g2-curve-cose-key-representation" title="Bls12381G2 Curve COSE Key Representation">
-            <t>
-            
-            </t>
+                <t>
+                    It is represented in a COSE_Key [RFC8152] using these values:
+                        o  "kty" (1): "EC1" (TBD - requested assignment 7)
+                        o  "crv" (-1): "Bls12381G2" (TBD - requested assignment 12)
+                    plus "x" (-2) values to represent the curve point for the key.
+                </t>
             </section>
         </section>
 
         <section anchor="bls48581-curve" title="BLS48-581 Curve">
             <section anchor="bls48581g1-curve-jose-key-representation" title="Bls48581G1 Curve JOSE Key Representation">
-            <t>
-
-            </t>
+                <t>
+                    The pairing friendly elliptic curve "BLS48-581" which uses the largest prime-order subgroup of E(GF(p)) is represented in a JSON Web Key (JWK) [RFC7517] using these values:
+                        o  "kty": "EC"
+                        o  "crv": "Bls48581G1"
+                    plus "x" value to represent the curve point for the public key.
+                </t>
             </section>
             <section anchor="bls48581g1-curve-cose-key-representation" title="Bls48581G1 Curve COSE Key Representation">
-            <t>
-            
-            </t>
+                <t>
+                    It is represented in a COSE_Key [RFC8152] using these values:
+                        o  "kty" (1): "EC1" (TBD - requested assignment 7)
+                        o  "crv" (-1): "Bls48581G1" (TBD - requested assignment 13)
+                    plus "x" (-2) values to represent the curve point for the key.
+                </t>
             </section>
             <section anchor="bls48581g2-curve-jose-key-representation" title="Bls48581G2 Curve JOSE Key Representation">
-            <t>
-
-            </t>
+                <t>
+                    The pairing friendly elliptic curve "BLS48-581" which uses the largest prime-order subgroup of E'(GF(p^8)) is represented in a JSON Web Key (JWK) [RFC7517] using these values:
+                        o  "kty": "EC"
+                        o  "crv": "Bls48581G2"
+                    plus "x" value to represent the curve point for the public key.
+                </t>
             </section>
             <section anchor="bls48581g2-curve-cose-key-representation" title="Bls48581G2 Curve COSE Key Representation">
-            <t>
-            
-            </t>
+                <t>
+                    It is represented in a COSE_Key [RFC8152] using these values:
+                        o  "kty" (1): "EC1" (TBD - requested assignment 7)
+                        o  "crv" (-1): "Bls48581G1" (TBD - requested assignment 14)
+                    plus "x" (-2) values to represent the curve point for the key.
+                </t>
             </section>
         </section>
+    </section>
+
+    <section anchor="ec1-cose-key-types-registration" title="EC1 COSE Key Types Registration">
+        <t>
+        </t>
     </section>
     
     <section anchor="iana-considerations" title="IANA Considerations">
@@ -146,45 +189,6 @@
           o  Change Controller:<vspace/>
           o  Specification Document(s):</t>
 
-          <t>o  Attribute Name: "type"<vspace/>
-          o  Attribute Description: Message Type<vspace/>
-          o  Change Controller:<vspace/>
-          o  Specification Document(s):</t>
-
-          <t>o  Attribute Name: "body"<vspace/>
-          o  Attribute Description: Message Body<vspace/>
-          o  Change Controller:<vspace/>
-          o  Specification Document(s):</t>
-
-          <t>o  Attribute Name: "to"<vspace/>
-          o  Attribute Description: Message Recipients<vspace/>
-          o  Change Controller:<vspace/>
-          o  Specification Document(s):</t>
-
-          <t>o  Attribute Name: "from"<vspace/>
-          o  Attribute Description: Message From<vspace/>
-          o  Change Controller:<vspace/>
-          o  Specification Document(s):</t>
-
-          <t>o  Attribute Name: "created_time"<vspace/>
-          o  Attribute Description: Message Created Time<vspace/>
-          o  Change Controller:<vspace/>
-          o  Specification Document(s):</t>
-
-          <t>o  Attribute Name: "expires_time"<vspace/>
-          o  Attribute Description: Message Expiry Time<vspace/>
-          o  Change Controller:<vspace/>
-          o  Specification Document(s):</t>
-
-          <t>o  Attribute Name: "reply_url"<vspace/>
-          o  Attribute Description: Message Reply URL<vspace/>
-          o  Change Controller:<vspace/>
-          o  Specification Document(s):</t>
-
-          <t>o  Attribute Name: "reply_to"<vspace/>
-          o  Attribute Description: Message Reply To<vspace/>
-          o  Change Controller:<vspace/>
-          o  Specification Document(s):</t>
         </section>
       </section>
     </section>
