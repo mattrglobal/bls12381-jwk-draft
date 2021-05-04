@@ -145,7 +145,7 @@
                     The pairing friendly elliptic curve "BLS12-381" which uses an r-order subgroup of E'(GF(p^2)) is represented in a JSON Web Key (JWK) <xref target="RFC7517">[RFC7517]</xref> using these values:
                             o  "kty": "OKP"
                             o  "crv": "Bls12381G2"
-                    plus "x" value to represent the curve point for the public key.
+                    plus "x" value to represent the curve point for the public key. The "x" value MUST be encoded using the Z-Cash serialization defined in <xref target="DPFC09">[DPFC09]</xref> and MUST be base64url encoded without padding as defined in <xref target="RFC7515">[RFC7515]</xref> Appendix C.
                 </t>
             </section>
             <section anchor="bls12381g2-curve-cose-key-representation" title="Bls12381G2 Curve COSE Key Representation">
@@ -164,7 +164,7 @@
                     The pairing friendly elliptic curve "BLS48-581" which uses the largest prime-order subgroup of E(GF(p)) is represented in a JSON Web Key (JWK) <xref target="RFC7517">[RFC7517]</xref> using these values:
                         o  "kty": "OKP"
                         o  "crv": "Bls48581G1"
-                    plus "x" value to represent the curve point for the public key.
+                    plus "x" value to represent the curve point for the public key. The "x" value MUST be encoded using <xref target="SEC1">[SEC1]</xref> and MUST be base64url encoded without padding as defined in <xref target="RFC7515">[RFC7515]</xref> Appendix C.
                 </t>
             </section>
             <section anchor="bls48581g1-curve-cose-key-representation" title="Bls48581G1 Curve COSE Key Representation">
@@ -180,7 +180,7 @@
                     The pairing friendly elliptic curve "BLS48-581" which uses the largest prime-order subgroup of E'(GF(p^8)) is represented in a JSON Web Key (JWK) <xref target="RFC7517">[RFC7517]</xref> using these values:
                         o  "kty": "OKP"
                         o  "crv": "Bls48581G2"
-                    plus "x" value to represent the curve point for the public key.
+                    plus "x" value to represent the curve point for the public key. The "x" value MUST be encoded using <xref target="SEC1">[SEC1]</xref> and MUST be base64url encoded without padding as defined in <xref target="RFC7515">[RFC7515]</xref> Appendix C.
                 </t>
             </section>
             <section anchor="bls48581g2-curve-cose-key-representation" title="Bls48581G2 Curve COSE Key Representation">
