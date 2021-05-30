@@ -10,11 +10,11 @@
 <?rfc inline="yes"?>
 <?rfc compact="yes"?>
 <?rfc subcompact="no"?>
-<rfc category="std" docName="draft-denhartog-pairing-friendly-curves-jose-cose-00"
+<rfc category="std" docName="draft-denhartog-pairing-curves-jose-cose-00"
      ipr="trust200902">
 
   <front>
-    <title abbrev="draft-denhartog-pairing-friendly-curves-jose-cose">Pairing Friendly Curves representations in JOSE and COSE</title>
+    <title abbrev="draft-denhartog-pairing-curves-jose-cose">Pairing Friendly Curves representations in JOSE and COSE</title>
 
     <author fullname="Kyle Den Hartog" 
             initials="K." role="editor"
@@ -25,7 +25,7 @@
       </address>
     </author>
 
-    <date day="4" month="May" year="2021"/>
+    <date day="31" month="May" year="2021"/>
 
     <abstract>
       <t>This specification defines representations enabling the Standards
@@ -196,184 +196,180 @@
     
     <section anchor="iana-considerations" title="IANA Considerations">
         <section anchor="json-web-key-ec-registration" title="JSON Web Key Elliptic Curve Registrations">
-            <section>
-                <t>
-                 This section registers the following value in the IANA "JSON Web Key
-                 Elliptic Curve" registry [IANA.JOSE.Curves].
-                 </t>
-
-                 <t>
-                    o  Curve Name: Bn256G1
-                    o  Curve Description: 256 bit Barreto-Naehrig pairing friendly curve using the largest prime-order subgroup of E(GF(p))
-                    o  JOSE Implementation Requirements: Prohibited
-                    o  Change Controller: IESG
-                    o  Specification Document(s): Section 2.1 of [[ this specification ]]
+            <t>
+                This section registers the following value in the IANA "JSON Web Key
+                Elliptic Curve" registry [IANA.JOSE.Curves].
                 </t>
 
                 <t>
-                    o  Curve Name: Bn256G2
-                    o  Curve Description: 256 bit Barreto-Naehrig pairing friendly curve using an r-order subgroup of E'(GF(p^2))
-                    o  JOSE Implementation Requirements: Prohibited
-                    o  Change Controller: IESG
-                    o  Specification Document(s): Section 2.3 of [[ this specification ]]
-                </t>
+                o  Curve Name: Bn256G1
+                o  Curve Description: 256 bit Barreto-Naehrig pairing friendly curve using the largest prime-order subgroup of E(GF(p))
+                o  JOSE Implementation Requirements: Prohibited
+                o  Change Controller: IESG
+                o  Specification Document(s): Section 2.1 of [[ this specification ]]
+            </t>
 
-                <t>
-                    o  Curve Name: Bn462G1
-                    o  Curve Description: 462 bit Barreto-Naehrig pairing friendly curve using the largest prime-order subgroup of E(GF(p))
-                    o  JOSE Implementation Requirements: Optional
-                    o  Change Controller: IESG
-                    o  Specification Document(s): Section 2.5 of [[ this specification ]]
-                </t>
+            <t>
+                o  Curve Name: Bn256G2
+                o  Curve Description: 256 bit Barreto-Naehrig pairing friendly curve using an r-order subgroup of E'(GF(p^2))
+                o  JOSE Implementation Requirements: Prohibited
+                o  Change Controller: IESG
+                o  Specification Document(s): Section 2.3 of [[ this specification ]]
+            </t>
 
-                <t>
-                    o  Curve Name: Bn462G2
-                    o  Curve Description: 462 bit Barreto-Naehrig pairing friendly curve using an r-order subgroup of E'(GF(p^2))
-                    o  JOSE Implementation Requirements: Optional
-                    o  Change Controller: IESG
-                    o  Specification Document(s): Section 2.7 of [[ this specification ]]
-                </t>
+            <t>
+                o  Curve Name: Bn462G1
+                o  Curve Description: 462 bit Barreto-Naehrig pairing friendly curve using the largest prime-order subgroup of E(GF(p))
+                o  JOSE Implementation Requirements: Optional
+                o  Change Controller: IESG
+                o  Specification Document(s): Section 2.5 of [[ this specification ]]
+            </t>
 
-                <t>
-                    o  Curve Name: Bls12381G1
-                    o  Curve Description: 381 bit with an embedding degree of 12 Barreto-Lynn-Scott pairing friendly curve using an r-order subgroup of E(GF(p))
-                    o  JOSE Implementation Requirements: Optional
-                    o  Change Controller: IESG
-                    o  Specification Document(s): Section 3.1 of [[ this specification ]]
-                </t>
+            <t>
+                o  Curve Name: Bn462G2
+                o  Curve Description: 462 bit Barreto-Naehrig pairing friendly curve using an r-order subgroup of E'(GF(p^2))
+                o  JOSE Implementation Requirements: Optional
+                o  Change Controller: IESG
+                o  Specification Document(s): Section 2.7 of [[ this specification ]]
+            </t>
 
-                <t>
-                    o  Curve Name: Bls12381G2
-                    o  Curve Description: 381 bit with an embedding degree of 12 Barreto-Lynn-Scott pairing friendly curve using an r-order subgroup of E'(GF(p^2))
-                    o  JOSE Implementation Requirements: Optional
-                    o  Change Controller: IESG
-                    o  Specification Document(s): Section 3.3 of [[ this specification ]]
-                </t>
+            <t>
+                o  Curve Name: Bls12381G1
+                o  Curve Description: 381 bit with an embedding degree of 12 Barreto-Lynn-Scott pairing friendly curve using an r-order subgroup of E(GF(p))
+                o  JOSE Implementation Requirements: Optional
+                o  Change Controller: IESG
+                o  Specification Document(s): Section 3.1 of [[ this specification ]]
+            </t>
 
-                <t>
-                    o  Curve Name: Bls48581G1
-                    o  Curve Description: 581 bit with an embedding degree of 48 Barreto-Lynn-Scott pairing friendly curve using an r-order subgroup of E(GF(p))
-                    o  JOSE Implementation Requirements: Optional
-                    o  Change Controller: IESG
-                    o  Specification Document(s): Section 3.5 of [[ this specification ]]
-                </t>
+            <t>
+                o  Curve Name: Bls12381G2
+                o  Curve Description: 381 bit with an embedding degree of 12 Barreto-Lynn-Scott pairing friendly curve using an r-order subgroup of E'(GF(p^2))
+                o  JOSE Implementation Requirements: Optional
+                o  Change Controller: IESG
+                o  Specification Document(s): Section 3.3 of [[ this specification ]]
+            </t>
 
-                <t>
-                    o  Curve Name: Bls48581G1
-                    o  Curve Description: 581 bit with an embedding degree of 48 Barreto-Lynn-Scott pairing friendly curve using an r-order subgroup of E'(GF(p^8))
-                    o  JOSE Implementation Requirements: Optional
-                    o  Change Controller: IESG
-                    o  Specification Document(s): Section 3.7 of [[ this specification ]]
-                </t>
-            </section>
+            <t>
+                o  Curve Name: Bls48581G1
+                o  Curve Description: 581 bit with an embedding degree of 48 Barreto-Lynn-Scott pairing friendly curve using an r-order subgroup of E(GF(p))
+                o  JOSE Implementation Requirements: Optional
+                o  Change Controller: IESG
+                o  Specification Document(s): Section 3.5 of [[ this specification ]]
+            </t>
+
+            <t>
+                o  Curve Name: Bls48581G1
+                o  Curve Description: 581 bit with an embedding degree of 48 Barreto-Lynn-Scott pairing friendly curve using an r-order subgroup of E'(GF(p^8))
+                o  JOSE Implementation Requirements: Optional
+                o  Change Controller: IESG
+                o  Specification Document(s): Section 3.7 of [[ this specification ]]
+            </t>
         </section>
 
         <section anchor="cbor-web-key-ec-registration" title="COSE Elliptic Curve Registrations">
-            <section>
-                <t>
-                 This section registers the following value in the IANA "JSON Web Key
-                 Elliptic Curve" registry [IANA.JOSE.Curves].
-                 </t>
-
-                 <t>
-                    o  Curve Name: Bn256G1
-                    o  Value: TBD (requested assignment 9)
-                    o  Key Type: OKP
-                    o  Curve Description: 256 bit Barreto-Naehrig pairing friendly curve using the largest prime-order subgroup of E(GF(p))
-                    o  JOSE Implementation Requirements: Prohibited
-                    o  Change Controller: IESG
-                    o  Specification Document(s): Section 2.2 of [[ this specification ]]
-                    o  Recommended: No (Prohibited)
-
+            <t>
+                This section registers the following value in the IANA "JSON Web Key
+                Elliptic Curve" registry [IANA.JOSE.Curves].
                 </t>
 
                 <t>
-                    o  Curve Name: Bn256G2
-                    o  Value: TBD (requested assignment 10)
-                    o  Key Type: OKP
-                    o  Curve Description: 256 bit Barreto-Naehrig pairing friendly curve using an r-order subgroup of E'(GF(p^2))
-                    o  JOSE Implementation Requirements: Prohibited
-                    o  Change Controller: IESG
-                    o  Specification Document(s): Section 2.4 of [[ this specification ]]
-                    o  Recommended: No (Prohibited)
-                </t>
+                o  Curve Name: Bn256G1
+                o  Value: TBD (requested assignment 9)
+                o  Key Type: OKP
+                o  Curve Description: 256 bit Barreto-Naehrig pairing friendly curve using the largest prime-order subgroup of E(GF(p))
+                o  JOSE Implementation Requirements: Prohibited
+                o  Change Controller: IESG
+                o  Specification Document(s): Section 2.2 of [[ this specification ]]
+                o  Recommended: No (Prohibited)
 
-                <t>
-                    o  Curve Name: Bn462G1
-                    o  Value: TBD (requested assignment 11)
-                    o  Key Type: OKP
-                    o  Curve Description: 462 bit Barreto-Naehrig pairing friendly curve using the largest prime-order subgroup of E(GF(p))
-                    o  JOSE Implementation Requirements: Optional
-                    o  Change Controller: IESG
-                    o  Specification Document(s): Section 2.6 of [[ this specification ]]
-                    o  Recommended: No
-                </t>
+            </t>
 
-                <t>
-                    o  Curve Name: Bn462G2
-                    o  Value: TBD (requested assignment 12)
-                    o  Key Type: OKP
-                    o  Curve Description: 462 bit Barreto-Naehrig pairing friendly curve using an r-order subgroup of E'(GF(p^2))
-                    o  JOSE Implementation Requirements: Optional
-                    o  Change Controller: IESG
-                    o  Specification Document(s): Section 2.8 of [[ this specification ]]
-                    o  Recommended: No
-                </t>
+            <t>
+                o  Curve Name: Bn256G2
+                o  Value: TBD (requested assignment 10)
+                o  Key Type: OKP
+                o  Curve Description: 256 bit Barreto-Naehrig pairing friendly curve using an r-order subgroup of E'(GF(p^2))
+                o  JOSE Implementation Requirements: Prohibited
+                o  Change Controller: IESG
+                o  Specification Document(s): Section 2.4 of [[ this specification ]]
+                o  Recommended: No (Prohibited)
+            </t>
 
-                <t>
-                    o  Curve Name: Bls12381G1
-                    o  Value: TBD (requested assignment 13)
-                    o  Key Type: OKP
-                    o  Curve Description: 381 bit with an embedding degree of 12 Barreto-Lynn-Scott pairing friendly curve using an r-order subgroup of E(GF(p))
-                    o  JOSE Implementation Requirements: Optional
-                    o  Change Controller: IESG
-                    o  Specification Document(s): Section 3.2 of [[ this specification ]]
-                    o  Recommended: Yes
-                </t>
+            <t>
+                o  Curve Name: Bn462G1
+                o  Value: TBD (requested assignment 11)
+                o  Key Type: OKP
+                o  Curve Description: 462 bit Barreto-Naehrig pairing friendly curve using the largest prime-order subgroup of E(GF(p))
+                o  JOSE Implementation Requirements: Optional
+                o  Change Controller: IESG
+                o  Specification Document(s): Section 2.6 of [[ this specification ]]
+                o  Recommended: No
+            </t>
 
-                <t>
-                    o  Curve Name: Bls12381G2
-                    o  Value: TBD (requested assignment 14)
-                    o  Key Type: OKP
-                    o  Curve Description: 381 bit with an embedding degree of 12 Barreto-Lynn-Scott pairing friendly curve using an r-order subgroup of E'(GF(p^2))
-                    o  JOSE Implementation Requirements: Optional
-                    o  Change Controller: IESG
-                    o  Specification Document(s): Section 3.4 of [[ this specification ]]
-                    o  Recommended: Yes
-                </t>
+            <t>
+                o  Curve Name: Bn462G2
+                o  Value: TBD (requested assignment 12)
+                o  Key Type: OKP
+                o  Curve Description: 462 bit Barreto-Naehrig pairing friendly curve using an r-order subgroup of E'(GF(p^2))
+                o  JOSE Implementation Requirements: Optional
+                o  Change Controller: IESG
+                o  Specification Document(s): Section 2.8 of [[ this specification ]]
+                o  Recommended: No
+            </t>
 
-                <t>
-                    o  Curve Name: Bls48581G1
-                    o  Value: TBD (requested assignment 15)
-                    o  Key Type: OKP
-                    o  Curve Description: 581 bit with an embedding degree of 48 Barreto-Lynn-Scott pairing friendly curve using an r-order subgroup of E(GF(p))
-                    o  JOSE Implementation Requirements: Optional
-                    o  Change Controller: IESG
-                    o  Specification Document(s): Section 3.6 of [[ this specification ]]
-                    o  Recommended: No
-                </t>
+            <t>
+                o  Curve Name: Bls12381G1
+                o  Value: TBD (requested assignment 13)
+                o  Key Type: OKP
+                o  Curve Description: 381 bit with an embedding degree of 12 Barreto-Lynn-Scott pairing friendly curve using an r-order subgroup of E(GF(p))
+                o  JOSE Implementation Requirements: Optional
+                o  Change Controller: IESG
+                o  Specification Document(s): Section 3.2 of [[ this specification ]]
+                o  Recommended: Yes
+            </t>
 
-                <t>
-                    o  Curve Name: Bls48581G1
-                    o  Value: TBD (requested assignment 16)
-                    o  Key Type: OKP
-                    o  Curve Description: 581 bit with an embedding degree of 48 Barreto-Lynn-Scott pairing friendly curve using an r-order subgroup of E'(GF(p^8))
-                    o  JOSE Implementation Requirements: Optional
-                    o  Change Controller: IESG
-                    o  Specification Document(s): Section 3.8 of [[ this specification ]]
-                    o  Recommended: No
-                </t>
-            </section>
+            <t>
+                o  Curve Name: Bls12381G2
+                o  Value: TBD (requested assignment 14)
+                o  Key Type: OKP
+                o  Curve Description: 381 bit with an embedding degree of 12 Barreto-Lynn-Scott pairing friendly curve using an r-order subgroup of E'(GF(p^2))
+                o  JOSE Implementation Requirements: Optional
+                o  Change Controller: IESG
+                o  Specification Document(s): Section 3.4 of [[ this specification ]]
+                o  Recommended: Yes
+            </t>
+
+            <t>
+                o  Curve Name: Bls48581G1
+                o  Value: TBD (requested assignment 15)
+                o  Key Type: OKP
+                o  Curve Description: 581 bit with an embedding degree of 48 Barreto-Lynn-Scott pairing friendly curve using an r-order subgroup of E(GF(p))
+                o  JOSE Implementation Requirements: Optional
+                o  Change Controller: IESG
+                o  Specification Document(s): Section 3.6 of [[ this specification ]]
+                o  Recommended: No
+            </t>
+
+            <t>
+                o  Curve Name: Bls48581G1
+                o  Value: TBD (requested assignment 16)
+                o  Key Type: OKP
+                o  Curve Description: 581 bit with an embedding degree of 48 Barreto-Lynn-Scott pairing friendly curve using an r-order subgroup of E'(GF(p^8))
+                o  JOSE Implementation Requirements: Optional
+                o  Change Controller: IESG
+                o  Specification Document(s): Section 3.8 of [[ this specification ]]
+                o  Recommended: No
+            </t>
         </section>
     </section>
 
     <section anchor="security-considerations" title="Security Considerations">
-        See <xref target="DPFC09">[DPFC09]</xref> for additional details about security considerations of the curves used. Implementers should also consider section 9 of 
-        <xref target="RFC7517">[RFC7517]</xref> when implementing this work.
+        <t>See <xref target="DPFC09">[DPFC09]</xref> for additional details about security considerations of the curves used. Implementers should also consider section 9 of 
+        <xref target="RFC7517">[RFC7517]</xref> when implementing this work.</t>
     </section>
 
     <section anchor="privacy-considerations" title="Privacy Considerations">
-        To be added.
+        <t>To be added.</t>
     </section>
 
     <section anchor="acknowledgements" title="Acknowledgements">
