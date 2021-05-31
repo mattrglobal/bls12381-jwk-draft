@@ -8,7 +8,7 @@ Intended status: Standards Track                            May 31, 2021
 Expires: December 2, 2021
 
 
-        Pairing Friendly Curves representations in JOSE and COSE
+        Pairing Friendly Curves Representations in JOSE and COSE
               draft-denhartog-pairing-curves-jose-cose-00
 
 Abstract

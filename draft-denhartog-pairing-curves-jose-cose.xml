@@ -13,7 +13,7 @@
 <rfc category="std" docName="draft-denhartog-pairing-curves-jose-cose-00" ipr="trust200902">
 
     <front>
-        <title abbrev="draft-denhartog-pairing-curves-jose-cose">Pairing Friendly Curves representations in JOSE and COSE</title>
+        <title abbrev="draft-denhartog-pairing-curves-jose-cose">Pairing Friendly Curves Representations in JOSE and COSE</title>
 
         <author fullname="Kyle Den Hartog" initials="K." role="editor" surname="Den Hartog">
             <organization>Mattr</organization>
