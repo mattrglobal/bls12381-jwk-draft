@@ -27,7 +27,7 @@ Now install the `xml2rfc` package using pip.
 
 ### Updating Docs
 
-Update `draft-looker-jwm.xml` file with your desired changes.
+Update `draft-denhartog-pairing-curves-jose-cose.xml` file with your desired changes.
 
 Run the following to compile the new RFC txt file from the XML.
 
