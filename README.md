@@ -1,3 +1,7 @@
+# Archived
+
+This draft is being archived in favor of [draft-looker-bls-jose-cose](https://github.com/tplooker/draft-looker-bls-jose-cose). Please refer there to continue discussion on this work.
+
 # Pairing Friendly Curves representations in JOSE and COSE IETF Internet Draft RFC
 
 This specification aims to defines representations enabling the Standardsfor Pairing Frinedly Curves to be used for JSON Object Signing and Encryption (JOSE) and CBOR Object Signing and Encryption (COSE) messages.
